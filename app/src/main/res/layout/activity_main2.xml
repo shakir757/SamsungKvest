@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="У Олиной мамы пять дочек. \nВика, Аня, Марта, Кира... \nКак зовут пятую?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:paddingStart="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_rita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Рита"
+        android:onClick="fail"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintEnd_toStartOf="@id/button_olya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_olya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Оля"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintStart_toEndOf="@id/button_rita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_tanya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Таня"
+        android:onClick="fail"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_rita"
+        app:layout_constraintEnd_toEndOf="@+id/button_rita" />
+
+    <Button
+        android:id="@+id/button_sonya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Соня"
+        android:onClick="fail"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_olya"
+        app:layout_constraintStart_toStartOf="@+id/button_olya" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
